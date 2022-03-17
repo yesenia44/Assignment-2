@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 20px 30px;
+   background-color: rosybrown;
+
+}
+header h1 {
+    font-weight: bold;
+    font-size: 26px;
+    color: black;
+    margin: 0;
+    
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+header nav {  
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+header nav ul li a {
+    margin: 0 30px;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rosybrown;
+    width: 100%;
+    padding: 20px 15px;
+}
+footer h4 {
+    color: black;
+    font-size: 22px;
+    margin: 0;
+}
+footer div {
+    line-height: 1.5;
+    text-align: right;
+    color: black
+}
+.profile {
+    text-align: center;
+}
+.content {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.about-me  {
+    color:black;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+.about-me p {
+
+   
+
+}
+
+.contact, .contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 150px;
+    list-style: none;
+    width: 100%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: right;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+   
+}
+.project-image {
+    width: 120px;
+    
+}
+.project-image-first {
+    width: 300px;
+}
+.text {
+    padding-left: 20px;
+}

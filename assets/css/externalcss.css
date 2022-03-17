@@ -81,9 +81,8 @@ footer div {
     justify-content: space-between;    
 }
 .about-me p {
-
-   
-
+    padding: 15px 15px 15px 60px;
+    font-size: 12pt;
 }
 
 .contact, .contact ul {
@@ -96,20 +95,37 @@ footer div {
     width: 100%;
 }
 .flex-container {
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: right;
+    padding: 15px 0px 15px;
 }
 .projects {
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     
-   
+}
+.first-phrase {
+    position: absolute;
+    bottom: 180px;
+    left: 90px;
+}
+.second-phrase {
+    position: absolute;
+    bottom: 10px;
+}
+.third-phrase {
+    position: absolute;
+    bottom:
 }
 .project-image {
-    width: 120px;
+    position: relative;
+    text-align: center;
+    width: 180px;
     
 }
 .project-image-first {

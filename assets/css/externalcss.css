@@ -56,7 +56,7 @@ footer {
 }
 footer h4 {
     color: black;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
 }
 footer div {
@@ -66,6 +66,7 @@ footer div {
 }
 .profile {
     text-align: center;
+    padding-bottom: 30px;
 }
 .content {
     width: 100%;
@@ -78,7 +79,8 @@ footer div {
     font-size: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    padding-bottom: 30px; 
 }
 .about-me p {
     padding: 15px 15px 15px 60px;
@@ -94,43 +96,110 @@ footer div {
     list-style: none;
     width: 100%;
 }
-.flex-container {
-    
+.flex-container {  
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: right;
-    padding: 15px 0px 15px;
+    justify-content: space-evenly;
+    padding: 0px 30px 30px 15px;
 }
-.projects {
-    
+.projects {  
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 .first-phrase {
     position: absolute;
-    bottom: 180px;
-    left: 90px;
+    padding-left: 100px;
+    font-size: 16pt; 
 }
 .second-phrase {
     position: absolute;
-    bottom: 10px;
+    padding-left: 10px;
+    font-size: 12pt;  
 }
 .third-phrase {
     position: absolute;
-    bottom:
+    padding-left: 60px;
+    font-size: 12pt;
 }
 .project-image {
-    position: relative;
-    text-align: center;
-    width: 180px;
-    
+    width: 200px;   
 }
 .project-image-first {
-    width: 300px;
+    width: 300px;   
 }
 .text {
     padding-left: 20px;
 }
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREEN AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h4, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .about-me p {
+        padding: 0px 15px 15px 60px;
+    }
+    .flex-container {
+        padding: 0px 0px 50px 0px;
+
+    }
+    .contact, .contact ul {
+        gap: 100px;
+    }
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .flex-container {
+        padding: 0px 10px 50px 50px;
+    }
+    .contact, .contact ul {
+        gap: 50px;
+    }
+
+}
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    body {
+        overflow-x: hidden;
+    }
+    .project-image-first {  
+       flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    .project-image {
+
+    }
+    .contact, .contact ul {
+        gap: 10%;
+    }
+}
+    
+

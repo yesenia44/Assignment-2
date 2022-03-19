@@ -189,16 +189,20 @@ footer div {
         overflow-x: hidden;
     }
     .project-image-first {  
-       flex: 2 100%;
+        flex: 0 32%;
         text-align: center;
         justify-content: center;
         padding-bottom: 15px;
     }
     .project-image {
+       
+    .flex-container {
+        padding: 50px;
 
     }
-    .contact, .contact ul {
-        gap: 10%;
+    .contact ul {
+        gap: 0px;
+        text-align: center;
     }
 }
     
